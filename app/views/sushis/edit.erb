@@ -1,1 +1,9 @@
-<h1>Insert the form to edit an instance of your model here.</h1>
+<h3> Edit your sushi! </h3>
+
+<form action="/sushis/<%= @sushi.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="text" name="name" value="<%= @sushi.name %>"><br>
+  <input type="text" name="description" value="<%= @sushi.description %>"><br>
+  $<input type="text" name="price" value="<%= @sushi.price %>" ><br>
+  <input type="submit" name="" value="Edit Roll">
+</form>

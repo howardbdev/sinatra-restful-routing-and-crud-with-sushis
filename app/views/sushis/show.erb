@@ -1,5 +1,11 @@
-<h1>This is the show page for an individual instance of your model.</h1>
-
 <h4><%= @sushi.name %></h4>
 <p>Description: <%= @sushi.description %></p>
 <p>Price: $<%= @sushi.price %></p>
+
+
+
+<h5>Danger zone</h5>
+<form class="" action="/sushis/<%= @sushi.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name="" value="DELETE this sushi">
+</form>
