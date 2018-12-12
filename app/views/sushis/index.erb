@@ -1,0 +1,7 @@
+<h1>This is the Model's index page.</h1>
+
+<%#= show all the sushis: %>
+
+<% @sushis.each do |sushi|  %>
+  <h4><a href="/sushis/<%= sushi.id %>"><%= sushi.name %></a></h4>
+<% end %>
