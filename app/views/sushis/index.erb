@@ -3,5 +3,5 @@
 <%#= show all the sushis: %>
 
 <% @sushis.each do |sushi|  %>
-  <h4><a href="/sushis/<%= sushi.id %>"><%= sushi.name %></a></h4>
+  <h4><a href="/sushis/<%= sushi.id %>"><%= sushi.name %> - $<%= sushi.price %></a></h4>
 <% end %>
